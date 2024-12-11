@@ -9,4 +9,3 @@ cp ~/dotfiles/refined-edited.zsh-theme ~/.oh-my-zsh/themes/refined-edited.zsh-th
 cp ~/dotfiles/.zshrc ~/.zshrc
 cp ~/dotfiles/.dircolors ~/.dircolors
 git config --global --add safe.directory /data  
-zsh
