@@ -2,6 +2,7 @@
 
 # Install packages
 sudo apt update 
+sudo apt install wget -y
 sudo snap install jump
 
 # Install ZSH Shell
@@ -13,7 +14,8 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 
 # Install oh-my-posh prompt theme & customizer
-wget -q https://ohmyposh.dev/install.sh | bash -s
+sudo wget --no-check-certificate https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
 oh-my-posh font install meslo
 
 # Copy files from repo to local config dir
