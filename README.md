@@ -20,7 +20,7 @@ git config --global user.name <TODO:USER-NAME>
 git config --global user.email <TODO:USER-EMAIL>
 ```
 
-- Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles.git/documentation/git-ssh.md)
+- Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/git-ssh.md)
 
 - Clone the `dotfiles` repo into the home directory
 ```
@@ -35,7 +35,7 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 ## The Install Script - `install.sh`
 - Installs needed and most used packages 
 - Installs programs 
-	- Wavebox Browser will still need to be installed - [How-To: Install Wavebox](https://github.com/curtisburke-eng/dotfiles.git/documentation/How-to-install-Wavebox.md)
+	- Wavebox Browser will still need to be installed - [How-To: Install Wavebox](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/How-to-install-Wavebox.md)
 - Installs [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) shell
 - Installs [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) plugin manager
 - Installs [Oh my posh](https://ohmyposh.dev/) prompt theme 
