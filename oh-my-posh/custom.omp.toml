@@ -1,0 +1,79 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+
+[secondary_prompt]
+  template = '❯❯ '
+  foreground = 'p:brightGreen'
+  background = 'transparent'
+
+[transient_prompt]
+  template = '❯ '
+  background = 'transparent'
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}p:darkGreen{{end}}']
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    template = '<b>{{ .Path }} <\b>'
+    foreground = 'p:brightGreen'
+    background = 'transparent'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+      style = 'agnoster_short'
+
+  [[blocks.segments]]
+    template = '󰘬 {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }} <white>{{.Working.String}}{{ end }} <white>{{ if gt .Behind 0 }}.{{.Behind}}{{ end }}{{ if gt .Ahead 0 }}.{{.Ahead}}{{ end }}</>'
+    foreground = 'p:grey'
+    background = 'transparent'
+    type = 'git'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      branch_icon = ''
+      cache_duration = 'none'
+      commit_icon = '@'
+      fetch_status = true
+
+[[blocks]]
+  type = 'rprompt'
+  overflow = 'hidden'
+
+  [[blocks.segments]]
+    template = '{{ .FormattedMs }}'
+    foreground = 'yellow'
+    background = 'transparent'
+    type = 'executiontime'
+    style = 'austin'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+      threshold = 5000
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    template = '❯'
+    background = 'transparent'
+    type = 'text'
+    style = 'plain'
+    foreground_templates = ['{{if gt .Code 0}}p:brightGreen{{end}}', '{{if eq .Code 0}}p:brightGreen{{end}}']
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+[palette]
+brightGreen = '#00ff00'
+green1 = '#21ee21'
+darkGreen = '#005f00'
+grey = '#6c6c6c'
