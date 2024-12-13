@@ -3,7 +3,6 @@
 # Install packages
 sudo apt update 
 sudo apt install wget -y
-sudo snap install jump
 
 # Install ZSH Shell
 sudo apt install zsh -y
@@ -23,3 +22,6 @@ git config --global --add safe.directory /data
 
 # Install Oh-my-zsh plugin manager
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh --no-check-certificate)" -y
+
+# Source zsh
+source ~/.zshrc
