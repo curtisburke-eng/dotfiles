@@ -1,0 +1,33 @@
+{
+    "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v10/terminal-keeper.json",
+    "theme": "solarized",
+    "active": "default",
+    "activateOnStartup": true,
+    "keepExistingTerminals": false,
+    "sessions": {
+        "default": [
+            [
+                {
+                    "name": "project",
+                    "icon": "console",
+                    "autoExecuteCommands": true,
+                    "commands": [
+                        "zsh",
+                        "clear"
+                    ]
+                },
+                {
+                    "name": "docker",
+                    "autoExecuteCommands": false,
+                    "icon": "home",
+                    "commands": [
+                        "cd",
+                        "./dotfiles/install-docker.sh",
+                        "cp ~/dotfiles/.zshrc ~/.zsrc",
+                        "zsh"
+                    ]
+                }
+            ]
+        ]
+    }
+}
