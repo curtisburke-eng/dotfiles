@@ -29,6 +29,7 @@ alias c='clear'
 alias e='exit'
 alias ls='ls -1 --color=auto'
 alias code='code -r $1'
+alias neo='neofetch'
 
 eval "$(jump shell)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
