@@ -91,12 +91,7 @@ cd ~/dotfiles
 ```
 ### 7. Log out & Clean up
 - Log out & Log back in
-```
-logout
-```
-
 - Confirm everything looks nice
-
 - Move or Remove the used dotfiles repo
 	- Run this command from the Home directory
 ```
