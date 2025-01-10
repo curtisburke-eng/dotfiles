@@ -65,7 +65,11 @@ echo <use-tab-complete>
 ```
 ../dotfiles/2-install-progs.sh $(!!)
 ```
-- Answer "YES" to the question from VS Code 
+- Answer "YES" to the question from VS Code
+- Run code to create the initial config directories
+```
+code
+```
 ### 3. Install ZSH & Oh-my-Zsh
 ```
 cd ~/dotfiles
