@@ -37,6 +37,7 @@
     "gitlab.duoCodeSuggestions.enabled": false,
     "gitlab.duoChat.enabled": false,
     "makefile.configureOnOpen": true,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "qttools.extraSearchDirectories": []
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "qttools.extraSearchDirectories": [],
+    "editor.fontFamily": "MesloLGM Nerd Font"
 }
