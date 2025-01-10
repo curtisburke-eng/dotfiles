@@ -63,10 +63,12 @@ echo <use-tab-complete>
 ```
 - Run the second install script to loop the filenames and install each
 ```
-./2-install-progs.sh $(!!)
+../dotfiles/2-install-progs.sh $(!!)
 ```
+- Answer "YES" to the question from VS Code 
 ### 3. Install ZSH & Oh-my-Zsh
 ```
+cd ~/dotfiles
 ./3-install-zsh.sh
 ```
 ### 4. Install oh-my-posh
