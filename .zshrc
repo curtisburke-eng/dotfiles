@@ -21,8 +21,8 @@ ZSH_THEME=""
 plugins=(git)
 
 # TODO: Maybe I need this???
+PATH=$PATH:/home/cburke/.local/bin
 source $ZSH/oh-my-zsh.sh
-
 
 # Aliases
 alias c='clear'
