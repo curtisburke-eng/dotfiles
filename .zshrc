@@ -30,7 +30,8 @@ alias e='exit'
 alias ls='ls -1 --color=auto'
 alias code='code -r $1'
 alias neo='neofetch'
-alias flameshot='env QT_SCREEN_SCALE_FACTORS="2" flameshot gui'
+alias flameshot='flameshot gui'
+alias flameshot-uw='env QT_SCREEN_SCALE_FACTORS="2" flameshot gui'
 alias ..='cd ..'
 
 eval "$(jump shell)"
