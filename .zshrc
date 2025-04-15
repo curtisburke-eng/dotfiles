@@ -40,3 +40,4 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
 # # Use custom shell colors
 LS_COLORS='ex=38;5;120:di=01;38;5;46'
 export LS_COLORS
+eval "$(direnv hook zsh)"
