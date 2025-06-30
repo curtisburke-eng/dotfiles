@@ -10,5 +10,7 @@ sudo apt-get install neofetch
 sudo apt install flameshot
 sudo apt install ripgrep
 sudo apt install tree
+sudo apt install direnv
+sudo apt install terminator
 
 neofetch

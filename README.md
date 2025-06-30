@@ -1,5 +1,5 @@
 # Setting up a new Linux build with dotfile configs
-## Prerequisites 
+## Prerequisites
 Start with a freshly installed version of Debian based Linux (with the apt package manager)
 ### Install & Configure Git
 - Update the package manager
@@ -38,6 +38,12 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 	- htop
 	- net-tools
 	- neofetch
+	- flameshot
+	- ripgrep
+	- tree
+	- direnv
+	- terminator
+
 
 ```
 cd ~/dotfiles
@@ -56,7 +62,7 @@ cd ~/dotfiles
 cd ~/Downloads
 wget https://github.com/gsamokovarov/jump/releases/download/v0.51.0/jump_0.51.0_amd64.deb && sudo dpkg -i jump_0.51.0_amd64.deb
 ```
-- From within the `Downloads` direcory `echo` the file names for all the programs ready for install 
+- From within the `Downloads` direcory `echo` the file names for all the programs ready for install
 	- Tip: Use tab complete
 ```
 echo <use-tab-complete>
@@ -116,7 +122,7 @@ rm -r ~/dotfiles
 ## References
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) shell
 - [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) plugin manager
-- [Oh my posh](https://ohmyposh.dev/) prompt theme 
+- [Oh my posh](https://ohmyposh.dev/) prompt theme
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [kitty](https://sw.kovidgoyal.net/kitty/binary/) terminal
 
