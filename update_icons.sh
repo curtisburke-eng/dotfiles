@@ -13,7 +13,7 @@ newIconPaths=(
   "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/home.png"
   "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/web.png"
   "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/tech.png"
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/notes.png"
+  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/bos.png"
   "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/terminal.png"
   
 )
