@@ -114,9 +114,9 @@ rm -r ~/dotfiles
 ```
 cd ~/Vault/3-RESOURCES/dotfiles
 ```
-- Run the update icon script
+- Run the update icon script (with super user permissions)
 ```
-./update_icons.sh
+sudo ./update_icons.sh
 ```
 
 ### Create a GitHub/GitLab ssh key (if not done so already)
@@ -128,6 +128,3 @@ cd ~/Vault/3-RESOURCES/dotfiles
 - [Oh my posh](https://ohmyposh.dev/) prompt theme
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [terminator](https://gnome-terminator.org/) terminal emulator
-
-
-
