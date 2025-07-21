@@ -6,9 +6,9 @@ cp -p ~/dotfiles/.zshrc ~/.zshrc
 cp -p ~/dotfiles/oh-my-posh/custom.omp.toml ~/.config/oh-my-posh/custom.omp.toml
 cp -p ~/dotfiles/neofetch/config.conf ~/.config/neofetch/config.conf
 cp -p ~/dotfiles/neofetch/my-handy-ascii-art.txt ~/.config/neofetch/my-handy-ascii-art.txt
-cp -p ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-cp -p ~/dotfiles/kitty/theme.conf ~/.config/kitty/theme.conf
-cp -p ~/dotfiles/Code/settings.json ~/.config/Code/User/settings.json
+cp -p ~/dotfiles/terminator/config ~/.config/terminator/
+cp -p -r ~/dotfiles/micro ~/.config/micro
+cp -p -r ~/dotfiles/flameshot ~/.config/flameshot
 
 # Make working directories
 mkdir ~/Multimedia

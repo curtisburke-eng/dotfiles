@@ -1,0 +1,31 @@
+[global_config]
+  scroll_tabbar = True
+  ask_before_closing = never
+[keybindings]
+  cycle_next = <Primary>Page_Down
+  cycle_prev = <Primary>Page_Up
+  split_horiz = <Primary>asciicircum
+  split_vert = <Primary>percent
+  close_term = <Primary>w
+  next_tab = <Alt>Page_Up
+  prev_tab = <Alt>Page_Down
+[profiles]
+  [[default]]
+    background_color = "#000e00"
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#aaaaaa"
+    foreground_color = "#21ee21"
+    show_titlebar = False
+    title_hide_sizetext = True
+    title_transmit_bg_color = "#008d0c"
+    title_inactive_bg_color = "#062902"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
