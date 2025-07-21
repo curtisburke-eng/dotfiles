@@ -106,21 +106,28 @@ rm -r ~/dotfiles
 ## Post Install
 
 ### Configure VS Code Extensions
-- _TODO:_ Find and copy an extension config file?
+- My VS Code settings are saved using setting sync paired with my GitHub account.
+  - Sign in to complete setting syncing
 
-### Create a GitHub/GitLab ssh key
+### Replace app icons
+- Navigate to the dotfiles directory within 3-RESOURCES
+```
+cd ~/Vault/3-RESOURCES/dotfiles
+```
+- Run the update icon script
+```
+./update_icons.sh
+```
+
+### Create a GitHub/GitLab ssh key (if not done so already)
 - Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/git-ssh.md)
-### Clone project repos
-
-### Install Docker, ROS, and other dev packages
-
 
 ## References
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) shell
 - [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) plugin manager
 - [Oh my posh](https://ohmyposh.dev/) prompt theme
 - [neofetch](https://github.com/dylanaraps/neofetch)
-- [kitty](https://sw.kovidgoyal.net/kitty/binary/) terminal
+- [terminator](https://gnome-terminator.org/) terminal emulator
 
 
 
