@@ -85,17 +85,13 @@ cd ~/dotfiles
 ```
 ./4-install-posh.sh
 ```
-### 5. Install kitty Terminal
-```
-./5-install-kitty.sh
-```
-### 6. Configure Settings
+### 5. Configure Settings
 - Copies configuration files for each program from the repo to the local config directories
 - Creates a working directory following a modified [PARA organization method](https://fortelabs.com/blog/para/)
 ```
-./6-install-configs.sh
+./5-install-configs.sh
 ```
-### 7. Log out & Clean up
+### 6. Log out & Clean up
 - Log out & Log back in
 - Confirm everything looks nice
 - Move or Remove the used dotfiles repo
