@@ -27,12 +27,14 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias c='clear'
 alias e='exit'
-alias ls='ls -1 --color=auto'
+alias ls='ls --color=auto -p --group-directories-first -x'
 alias code='code -r $1'
 alias neo='neofetch'
 alias flameshot='flameshot gui'
 alias flameshot-uw='env QT_SCREEN_SCALE_FACTORS="2" flameshot gui'
+alias bninja='cd build; ninja'
 alias ..='cd ..'
+alias nix-arx64="nix bundle --bundler '.#toArxArm64' '.#arm64'"
 
 eval "$(jump shell)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
