@@ -4,7 +4,8 @@ Start with a freshly installed version of Debian based Linux (with the apt packa
 ### Install & Configure Git
 - Update the package manager
 ```
-sudo apt update -y
+sudo apt update
+sudo apt upgrade -y
 ```
 
 - Install Git
