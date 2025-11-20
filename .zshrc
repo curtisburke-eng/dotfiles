@@ -34,7 +34,7 @@ alias flameshot='flameshot gui'
 alias flameshot-uw='env QT_SCREEN_SCALE_FACTORS="2" flameshot gui'
 alias bninja='cd build; ninja'
 alias ..='cd ..'
-alias nix-bundle-arm64="nix bundle --bundler '.#toArxArm64' '.#arm64'"
+alias nix-dev-build-arm64="nix develop .#arm64 --command -- cmake -G Ninja -B build-arm64 -S . && cmake --build build-arm64"
 
 eval "$(jump shell)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
@@ -43,3 +43,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
 LS_COLORS='ex=38;5;120:di=01;38;5;46'
 export LS_COLORS
 eval "$(direnv hook zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
