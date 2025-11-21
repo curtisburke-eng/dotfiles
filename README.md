@@ -108,6 +108,15 @@ rm -r ~/dotfiles
 ```
 ## Post Install
 
+### Install GNOME Tweaks and Pop-Shell
+```
+cd ~/Vault/3-RESOURCES/dotfiles
+./install-gnome-tweaks-and-pop-shell.sh 
+
+```
+- Open gnome extensions manager and turn on Pop-shell
+- Reboot
+
 ### Configure VS Code Extensions
 - My VS Code settings are saved using setting sync paired with my GitHub account.
   - Sign in to complete setting syncing
@@ -121,6 +130,13 @@ cd ~/Vault/3-RESOURCES/dotfiles
 ```
 sudo ./update_icons.sh
 ```
+
+### Set Up New Icon pack
+- Download [CandyIcons](https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip) and [Sweet Folders](https://github.com/EliverLara/Sweet-folders/archive/refs/heads/master.zip)
+- Extract the icon pack(s) into `~/.local/share/.icons/` 
+- Use gnome-tweaks to set the prefered pack and font, etc.
+- Go into `~/.local/share/.icons/Sweet-Teal/index.theme`
+- Edit the "Inherits" line to begin with `Inherits=candy-icons-master,`
 
 ### Create a GitHub/GitLab ssh key (if not done so already)
 - Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/git-ssh.md)
