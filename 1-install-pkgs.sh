@@ -4,15 +4,15 @@
 sudo apt update
 sudo apt-get update
 sudo apt install curl -y
-sudo apt install htop
-sudo apt install net-tools
-sudo apt install latexmk
-sudo apt-get install neofetch
-sudo apt install flameshot
-sudo apt install ripgrep
-sudo apt install micro
-sudo apt install tree
-sudo apt install direnv
-sudo apt install terminator
+sudo apt install htop -y
+sudo apt install net-tools -y
+sudo apt install latexmk -y
+sudo apt-get install neofetch -y
+sudo apt install flameshot -y
+sudo apt install ripgrep -y
+sudo apt install micro -y
+sudo apt install tree -y
+sudo apt install direnv -y
+sudo apt install terminator -y
 
 neofetch
