@@ -41,6 +41,7 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 	- neofetch
 	- flameshot
 	- ripgrep
+	- micro
 	- tree
 	- direnv
 	- terminator
@@ -58,6 +59,7 @@ cd ~/dotfiles
 	- [Wavebox](https://wavebox.io/download)
 	- [Obsidian](https://obsidian.md/download)
 	- [VS Code](https://code.visualstudio.com/download)
+	- [Synology Drive Client](https://www.synology.com/en-global/dsm/feature/drive)
 - Download jump using wget
 ```
 cd ~/Downloads
