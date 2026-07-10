@@ -1,0 +1,14 @@
+{
+  "name": "gitgraph-autostart",
+  "displayName": "Git Graph Autostart",
+  "description": "Automatically opens the Git Graph view when a git repository folder is opened.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js"
+}

@@ -39,5 +39,13 @@
     "makefile.configureOnOpen": true,
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     "qttools.extraSearchDirectories": [],
-    "editor.fontFamily": "MesloLGM Nerd Font"
+    "editor.fontFamily": "MesloLGM Nerd Font",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "cpp": false
+    },
+    "editor.inlayHints.enabled": "offUnlessPressed"
 }

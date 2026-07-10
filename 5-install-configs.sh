@@ -12,6 +12,8 @@ cp -p -r ~/dotfiles/micro ~/.config/micro
 cp -p -r ~/dotfiles/flameshot ~/.config/flameshot
 cp -p -r ~/dotfiles/.claude ~/.claude
 cp -p -r ~/dotfiles/.jump ~/.jump
+cp -p -r ~/dotfiles/.vscode/local-extensions-src ~/.vscode
+cp -p ~/dotfiles/Code/settings.json ~/Code/settings.json
 
 # Make working directories
 mkdir ~/Multimedia
@@ -20,7 +22,8 @@ mkdir ~/Vault
 mkdir ~/Vault/1-PROJECTS
 mkdir ~/Vault/2-AREAS
 mkdir ~/Vault/3-RESOURCES
-mkdir ~/Vault/3-RESOURCES/Obsidian-Vaults
-mkdir ~/Vault/3-RESOURCES/Obsidian-Vaults/VDSG
+mkdir ~/Vault/3-RESOURCES/Programs
 mkdir ~/Vault/4-EXTRAS
 mkdir ~/Vault/5-ARCHIVE
+
+cp -r ~/dotfiles/VSCode-Workspaces ~/Vault/3-RESOURCES/
