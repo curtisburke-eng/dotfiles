@@ -11,6 +11,7 @@ cp -p ~/dotfiles/terminator/config ~/.config/terminator/
 cp -p -r ~/dotfiles/micro ~/.config/micro
 cp -p -r ~/dotfiles/flameshot ~/.config/flameshot
 cp -p -r ~/dotfiles/.claude ~/.claude
+cp -p -r ~/dotfiles/.jump ~/.jump
 
 # Make working directories
 mkdir ~/Multimedia
