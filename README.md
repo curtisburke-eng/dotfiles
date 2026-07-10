@@ -38,6 +38,7 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 	- curl
 	- htop
 	- net-tools
+	- latexmk
 	- neofetch
 	- flameshot
 	- ripgrep
@@ -45,6 +46,9 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 	- tree
 	- direnv
 	- terminator
+	- python-is-python3
+	- clangd
+	- clang-format
 
 
 ```
@@ -111,7 +115,7 @@ rm -r ~/dotfiles
 ### Install GNOME Tweaks and Pop-Shell
 ```
 cd ~/Vault/3-RESOURCES/dotfiles
-./install-gnome-tweaks-and-pop-shell.sh 
+./install-gnome-tweaks-and-pop-shell.sh
 
 ```
 - Open gnome extensions manager and turn on Pop-shell
@@ -133,7 +137,7 @@ sudo ./update_icons.sh
 
 ### Set Up New Icon pack
 - Download [CandyIcons](https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip) and [Sweet Folders](https://github.com/EliverLara/Sweet-folders/archive/refs/heads/master.zip)
-- Extract the icon pack(s) into `~/.local/share/.icons/` 
+- Extract the icon pack(s) into `~/.local/share/.icons/`
 - Use gnome-tweaks to set the prefered pack and font, etc.
 - Go into `~/.local/share/.icons/Sweet-Teal/index.theme`
 - Edit the "Inherits" line to begin with `Inherits=candy-icons-master,`

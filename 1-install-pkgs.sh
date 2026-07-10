@@ -16,5 +16,6 @@ sudo apt install direnv -y
 sudo apt install terminator -y
 sudo apt install python-is-python3 -y
 sudo apt install clangd -y
+sudo apt install clang-format -y
 
 neofetch
