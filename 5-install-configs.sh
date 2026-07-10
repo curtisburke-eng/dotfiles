@@ -10,6 +10,7 @@ cp -p ~/dotfiles/neofetch/my-handy-ascii-art.txt ~/.config/neofetch/my-handy-asc
 cp -p ~/dotfiles/terminator/config ~/.config/terminator/
 cp -p -r ~/dotfiles/micro ~/.config/micro
 cp -p -r ~/dotfiles/flameshot ~/.config/flameshot
+cp -p -r ~/dotfiles/.claude ~/.claude
 
 # Make working directories
 mkdir ~/Multimedia
