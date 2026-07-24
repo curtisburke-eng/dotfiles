@@ -22,12 +22,12 @@ git config --global user.name <TODO:USER-NAME>
 git config --global user.email <TODO:USER-EMAIL>
 ```
 
-- _Optional:_ Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/git-ssh.md)
+- Set up an ssh key - [How-To-Setup-Git-ssh-Key](https://github.com/curtisburke-eng/overseer-terminal-config/blob/main/documentation/How-To-Setup-Git-ssh-Key.md)
 
 ### Get the configuration files
-- Clone the `dotfiles` repo into the home directory
+- Clone the `overseer-terminal-config` repo into the home directory
 ```
-cd && git clone https://github.com/curtisburke-eng/dotfiles.git
+cd && git clone https://github.com/curtisburke-eng/overseer-terminal-config.git
 ```
 
 ## Run the install scripts
@@ -52,7 +52,7 @@ cd && git clone https://github.com/curtisburke-eng/dotfiles.git
 
 
 ```
-cd ~/dotfiles
+cd ~/overseer-terminal-config
 ```
 ```
 ./1-install-pkgs.sh
@@ -61,7 +61,6 @@ cd ~/dotfiles
 ### 2. Download & Install Programs
 - Navigate the web to download any `.deb` programs not managed by apt
 	- [Wavebox](https://wavebox.io/download)
-	- [Obsidian](https://obsidian.md/download)
 	- [VS Code](https://code.visualstudio.com/download)
 	- [Synology Drive Client](https://www.synology.com/en-global/dsm/feature/drive)
 - Download jump using wget
@@ -76,7 +75,7 @@ echo <use-tab-complete>
 ```
 - Run the second install script to loop the filenames and install each
 ```
-../dotfiles/2-install-progs.sh $(!!)
+../overseer-terminal-config/2-install-progs.sh $(!!)
 ```
 - Answer "YES" to the question from VS Code
 - Run code to create the initial config directories
@@ -85,65 +84,46 @@ code
 ```
 ### 3. Install ZSH & Oh-my-Zsh
 ```
-cd ~/dotfiles
+cd ~/overseer-terminal-config
 ./3-install-zsh.sh
 ```
 ### 4. Install oh-my-posh
 ```
 ./4-install-posh.sh
 ```
-### 5. Configure Settings
+### 5. Make Working Directories
+- Creates a working directory following a modified [PARA organization method](https://fortelabs.com/blog/para/) with Vault-Tec themed directory names
+```
+./5-make-working-directories.sh
+```
+### 6. Configure Settings
 - Copies configuration files for each program from the repo to the local config directories
-- Creates a working directory following a modified [PARA organization method](https://fortelabs.com/blog/para/)
 ```
 ./5-install-configs.sh
 ```
 ### 6. Log out & Clean up
 - Log out & Log back in
 - Confirm everything looks nice
-- Move or Remove the used dotfiles repo
-	- Run this command from the Home directory
+- Move the used overseer-terminal-config repo
 ```
-mv ~/dotfiles ~/Vault/3-RESOURCES
+mv ~/overseer-terminal-config ~/Vault/3-VSP
 ```
-**OR**
-```
-rm -r ~/dotfiles
-```
+
 ## Post Install
-
-### Install GNOME Tweaks and Pop-Shell
-```
-cd ~/Vault/3-RESOURCES/dotfiles
-./install-gnome-tweaks-and-pop-shell.sh
-
-```
-- Open gnome extensions manager and turn on Pop-shell
-- Reboot
 
 ### Configure VS Code Extensions
 - My VS Code settings are saved using setting sync paired with my GitHub account.
   - Sign in to complete setting syncing
 
 ### Replace app icons
-- Navigate to the dotfiles directory within 3-RESOURCES
+- Navigate to the overseer-terminal-config directory within 3-VSP
 ```
-cd ~/Vault/3-RESOURCES/dotfiles
+cd ~/Vault/3-VSP/overseer-terminal-config
 ```
 - Run the update icon script (with super user permissions)
 ```
 sudo ./update_icons.sh
 ```
-
-### Set Up New Icon pack
-- Download [CandyIcons](https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip) and [Sweet Folders](https://github.com/EliverLara/Sweet-folders/archive/refs/heads/master.zip)
-- Extract the icon pack(s) into `~/.local/share/.icons/`
-- Use gnome-tweaks to set the prefered pack and font, etc.
-- Go into `~/.local/share/.icons/Sweet-Teal/index.theme`
-- Edit the "Inherits" line to begin with `Inherits=candy-icons-master,`
-
-### Create a GitHub/GitLab ssh key (if not done so already)
-- Set up ssh key - [How-To:Git SSH](https://github.com/curtisburke-eng/dotfiles/blob/main/documentation/git-ssh.md)
 
 ## References
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) shell
