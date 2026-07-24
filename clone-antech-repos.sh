@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Vault/1-PROJECTS/
+cd ~/Vault/1-VCRD/
 git clone git@gitlab.com:lightdeckdx/antechdx/element-i-plus-production-tool/element-i-plus-production-tool.git
 mv element-i-plus-production-tool EPT
 git clone git@gitlab.com:lightdeckdx/antechdx/element-i-plus-application.git
