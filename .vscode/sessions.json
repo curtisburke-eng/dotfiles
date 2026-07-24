@@ -8,18 +8,18 @@
     "default": [
       [
         {
-          "name": "Home",
-          "autoExecuteCommands": true,
-          "icon": "home",
-          "commands": [
-            "cd; clear;"
-          ]
+          "name": "Project",
+          "icon": "terminal",
+          "color": "terminal.ansiGreen",
+          "commands": []
         },
         {
-          "name": "project",
-          "icon": "layers",
+          "name": "Claude",
+          "autoExecuteCommands": true,
+          "icon": "robot",
+          "color": "terminal.ansiGreen",
           "commands": [
-            ""
+            "claude"
           ]
         }
       ]
