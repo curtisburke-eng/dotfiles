@@ -5,17 +5,14 @@ filePaths=(
   "/usr/share/applications/pop-cosmic-applications.desktop"
   "/usr/share/applications/wavebox.desktop"
   "/usr/share/applications/code.desktop"
-  "/usr/share/applications/obsidian.desktop"
   "/usr/share/applications/terminator.desktop"
 )
 
 newIconPaths=(
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/home.png"
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/web.png"
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/tech.png"
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/bos.png"
-  "/home/cburke/Vault/3-RESOURCES/dotfiles/app-icons/terminal.png"
-  
+  "~/Vault/3-VSP/overseer-terminal-config/app-icons/home.png"
+  "~/Vault/3-VSP/overseer-terminal-config/app-icons/web.png"
+  "~/Vault/3-VSP/overseer-terminal-config/app-icons/tech.png"
+  "~/Vault/3-VSP/overseer-terminal-config/app-icons/terminal.png"
 )
 
 # Check that both arrays are the same length

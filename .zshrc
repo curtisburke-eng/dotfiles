@@ -20,8 +20,7 @@ ZSH_THEME=""
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-# TODO: Maybe I need this???
-PATH=$PATH:/home/cburke/.local/bin
+PATH=$PATH:$HOME/.local/bin
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -34,8 +33,8 @@ alias flameshot='flameshot gui'
 alias flameshot-uw='env QT_SCREEN_SCALE_FACTORS="2" flameshot gui'
 alias bninja='cd build; ninja'
 alias ..='cd ..'
-alias nix-dev-build-arm64="nix develop .#arm64 --command -- cmake -G Ninja -B build-arm64 -S . && cmake --build build-arm64"
-alias hal-sim='cd ~/Vault/1-PROJECTS/HAL/hal-server/build && ./hal-simulator 50051'
+alias nix-dev="nix develop .#arm64"
+alias hal-sim='cd ~/Vault/1-VCRD/HAL/hal-server/build && ./hal-simulator 50051'
 
 eval "$(jump shell)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/custom.omp.toml)"
